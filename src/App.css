@@ -1,0 +1,95 @@
+/* App.css */
+
+/* General Styles */
+body {
+  background-color: #282c34;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styles */
+.App {
+  max-width: 800px;
+  background: linear-gradient(135deg, #4f83f5, #81c1ff);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Button Styles */
+button {
+  background-color: #f09d51;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #f09d51;
+}
+
+/* Challenge Styles */
+.challenge {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Styles */
+input[type="text"] {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 60%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+      padding: 10px;
+  }
+
+  .App {
+      padding: 10px;
+  }
+
+  button {
+      width: 100%;
+  }
+
+  input[type="text"] {
+      width: 90%;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.App {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.challenge {
+  animation: fadeIn 1s ease-in-out;
+}
